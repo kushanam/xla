@@ -39,7 +39,7 @@ load(
 
 package(
     # copybara:uncomment default_applicable_licenses = ["//tensorflow:license"],
-    default_visibility = [":friends"],
+    default_visibility = ["//visibility:public"],
     licenses = ["notice"],
 )
 
@@ -2967,6 +2967,7 @@ cc_library(
         "//xla/service:conditional_simplifier",
         "//xla/service:convert_async_collectives_to_sync",
         "//xla/service:convert_mover",
+        "//xla/service/gpu/testgpu:testgpu_pass",
         "//xla/service:convolution_4d_expander",
         "//xla/service:convolution_pred_expander",
         "//xla/service:copy_insertion",

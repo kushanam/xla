@@ -444,7 +444,7 @@ def compute_capabilities(repository_ctx):
     capabilities = get_host_environ(
         repository_ctx,
         _TF_CUDA_COMPUTE_CAPABILITIES,
-        "compute_35,compute_52",
+        "compute_52",
     ).split(",")
 
     # Map old 'x.y' capabilities to 'compute_xy'.
